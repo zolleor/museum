@@ -1,0 +1,16 @@
+:root {
+  --bg-dark: #151719;
+  --dark-red: #710707;
+  --font-gold: #9d8665;
+  --font1: 80px;
+  --font2: 32px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
