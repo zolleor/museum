@@ -1,0 +1,265 @@
+:root {
+  --bg-dark: #030303;
+  --dark-red: #710707;
+  --font-gold: #9d8665;
+  --font1: 80px;
+  --font2: 32px;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+* {
+  margin: 0;
+}
+
+.header {
+  padding-top: 74px;
+  padding-bottom: 76px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-right: 240px;
+  padding-left: 240px;
+}
+
+/* --------------- START SECTION STYLES --------------- */
+
+.section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.dark-section {
+  background-color: var(--bg-dark);
+}
+
+.video-section {
+  padding-top: 90px;
+}
+
+/* ----------------- END SECTION STYLES --------------- */
+
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  flex-wrap: wrap;
+  max-width: 720px;
+}
+
+.navigation-item {
+  padding-right: 76px;
+  list-style: none;
+}
+
+.navigation-item:last-child {
+  padding-right: 0;
+}
+
+.navigation-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  line-height: 50px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+
+  background-image: url("../svg/logo.svg");
+  width: 50px;
+  height: 34px;
+}
+
+.logo:hover {
+  filter: invert(56%) sepia(10%) saturate(1012%) hue-rotate(356deg) brightness(94%) contrast(93%);
+}
+
+h1 a {
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-family: 'Forum';
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 50px;
+  letter-spacing: 5px;
+  align-self: center;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  color: #9D8665;
+}
+
+/* --------------- START SECTION TITLE STYLES --------------- */
+
+.section-title {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.dark-section-title {
+  color: #ffffff;
+}
+
+.hover-section-title {
+  color: var(--font-gold);
+}
+
+.light-section-title {
+  color: #000000;
+}
+
+/* ----------------- END SECTION TITLE STYLES --------------- */
+
+.welcome {
+  min-height: 750px;
+  background-image: url("../img/louvre-museum-bg.jpg");
+  background-size: 1215px 750px;
+  background-repeat: no-repeat;
+  background-position: calc(50% + 352px) 100%;
+}
+
+.welcome-container {
+  padding-top: 114px;
+  max-width: 598px;
+}
+
+.welcome-container p {
+  padding-top: 26px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+
+  letter-spacing: 2px;
+
+  color: #FFFFFF;
+}
+
+.welcome-submit {
+  padding-top: 24px;
+  padding-right: 67px;
+  padding-bottom: 23px;
+  padding-left: 68px;
+
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 2px;
+
+  color: #ffffff;
+  background-color: var(--dark-red);
+
+  border: 0;
+  border-radius: 8px;
+
+  margin-top: 76px;
+}
+
+.welcome-submit:hover {
+  background-color: var(--font-gold);
+}
+
+
+/* - - - - - - - - - - - VISITING SECTION - - - - - - - - - - - */
+
+
+/* START UNDERLINE TITLE STYLES */
+
+.underline-title {
+  position: relative;
+}
+
+.underline-title::after {
+  content: "";
+  position: absolute;
+  bottom: -28px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--dark-red);
+}
+
+/*   END UNDERLINE TITLE STYLES */
+
+.visiting-cards {
+  max-width: 1440px;
+  margin-top: 103px;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  column-gap: 60px;
+  row-gap: 78px;
+}
+
+.visiting-cards-title {
+  position: relative;
+
+  font-size: 32px;
+  line-height: 35px;
+  font-weight: 400;
+
+  margin-top: 25px;
+}
+
+.visiting-cards-title:after {
+  content: "";
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  width: 300px;
+  background-color: var(--dark-red);
+}
+
+.visiting-cards-block {
+  max-width: 440px;
+  max-height: 422px;
+}
+
+.visiting-cards-block p {
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  margin-top: 21px;
+}
+
+.visiting-cards-block p:last-child {
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 10px;
+}
