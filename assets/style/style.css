@@ -80,7 +80,6 @@ html {
 }
 
 .logo {
-
   background-image: url("../svg/logo.svg");
   width: 50px;
   height: 34px;
@@ -90,7 +89,7 @@ html {
   filter: invert(56%) sepia(10%) saturate(1012%) hue-rotate(356deg) brightness(94%) contrast(93%);
 }
 
-h1 a {
+.make-logo a {
   color: #ffffff;
   text-transform: uppercase;
   margin-left: 20px;
@@ -103,19 +102,18 @@ h1 a {
   text-decoration: none;
 }
 
-h1 a:hover {
+.make-logo a:hover {
   color: #9D8665;
 }
 
-/* --------------- START SECTION TITLE STYLES --------------- */
+/* --------------- SECTION TITLE STYLES --------------- */
 
 .section-title {
   font-family: Forum;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 80px;
   line-height: 90px;
-
   letter-spacing: 5px;
   text-transform: uppercase;
 }
@@ -132,7 +130,7 @@ h1 a:hover {
   color: #000000;
 }
 
-/* ----------------- END SECTION TITLE STYLES --------------- */
+/* ----------------- SECTION TITLE STYLES --------------- */
 
 .welcome {
   min-height: 750px;
@@ -313,3 +311,71 @@ a.rolover {
 a.rolover:hover {
   background-image: url("../img/picture-explore-2.jpg");
 }
+
+
+/* - - - - - - - - - - - VIDEO SECTION - - - - - - - - - - - */
+
+.video-text {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.video-heading {
+  margin-top: 54px;
+}
+
+.video-paragraph {
+  margin-top: 45px;
+  margin-left: 121px;
+}
+
+.tickets {
+  margin-top: 5px;
+}
+
+/* C O N T A C T S */
+.contacts h2 {
+  font-family: Forum;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--font-gold);
+}
+
+.contacts-information-block {
+  margin-top: 104px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-information {
+  max-width: 282px;
+}
+
+.contacts-information h3 {
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 33px;
+  color: #000;
+}
+
+.contacts-information p {
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 26px;
+  color: #000;
+}
+
+.contacts-information p:first-of-type {
+  margin-top: 36px;
+}
+
+
+
+/* F O O T E R */
