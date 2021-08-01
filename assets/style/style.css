@@ -302,3 +302,14 @@ h1 a:hover {
 .explore-image {
   margin-top: 15px;
 }
+
+a.rolover {
+  background-image: url("../img/picture-explore.jpg");
+  display: block;
+  width: 720px;
+  height: 700px;
+}
+
+a.rolover:hover {
+  background-image: url("../img/picture-explore-2.jpg");
+}
