@@ -8,11 +8,6 @@
 
 html {
   scroll-behavior: smooth;
-
-}
-
-* {
-  margin: 0;
 }
 
 .header {
@@ -273,4 +268,37 @@ h1 a:hover {
   font-size: 18px;
   line-height: 21px;
   margin-top: 10px;
+}
+
+
+/* - - - - - - - - - - - EXPLORE SECTION - - - - - - - - - - - */
+
+.explore-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 60px;
+}
+
+
+
+.explore-text p {
+  margin-top: 25px;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+
+.explore-text p:first-of-type {
+  margin-top: 103px;
+}
+
+.golden-text {
+  color: var(--font-gold);
+}
+
+.explore-image {
+  margin-top: 15px;
 }
