@@ -6,20 +6,25 @@
   --font2: 32px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+html {
+  scroll-behavior: smooth;
+
 }
 
-.wrapper {
+* {
+  margin: 0;
+}
+
+.header {
+  padding-top: 74px;
+  padding-bottom: 76px;
+}
+
+.container {
   margin: 0 auto;
   max-width: 1440px;
   padding-right: 240px;
   padding-left: 240px;
-}
-
-li {
-  list-style: none;
 }
 
 .section {
@@ -35,41 +40,132 @@ li {
   padding-top: 90px;
 }
 
-.header {
-  padding-top: 74px;
-  padding-bottom: 76px;
-}
+/* ---------------------------------------------------------- */
 
-.header-2-colums {
-  display: grid;
-  grid-template-columns: 195px 720px;
-  column-gap: 525px;
-
-  height: 50px;
-}
-
-.navigation {
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navigation a {
-  text-decoration: none;
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  flex-wrap: wrap;
+  max-width: 720px;
+}
+
+.navigation-item {
+  padding-right: 76px;
+  list-style: none;
+}
+
+.navigation-item:last-child {
+  padding-right: 0;
+}
+
+.navigation-link {
   font-family: 'Roboto', sans-serif;
-  font-weight: 200;
   font-size: 22px;
   line-height: 50px;
+  font-weight: 100;
   letter-spacing: 2px;
-  color: #fffff;
+  text-decoration: none;
+  color: #ffffff;
 }
 
-ul,
-.navigation-item {
-  padding: 0;
-  margin: 0;
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-nav {
-  height: 50px;
+.logo {
+
+  background-image: url("assets/svg/logo.svg");
+  width: 50px;
+  height: 34px;
+}
+
+.logo:hover {
+  filter: invert(56%) sepia(10%) saturate(1012%) hue-rotate(356deg) brightness(94%) contrast(93%);
+}
+
+h1 a {
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-left: 20px;
+  font-family: 'Forum';
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 50px;
+  letter-spacing: 5px;
+  align-self: center;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  color: #9D8665;
+}
+
+/* ---------------------------------------------------------- */
+
+.section-title {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.dark-section-title {
+  color: #ffffff;
+}
+
+.welcome {
+  min-height: 750px;
+  background-image: url("assets/img/louvre-museum-bg.jpg");
+  background-size: 1215px 750px;
+  background-repeat: no-repeat;
+  background-position: calc(50% + 352px) 100%;
+}
+
+.welcome-container {
+  padding-top: 114px;
+  max-width: 598px;
+}
+
+.welcome-container p {
+  padding-top: 26px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+
+  letter-spacing: 2px;
+
+  color: #FFFFFF;
+}
+
+.welcome-link {
+  padding-top: 78px;
+}
+
+.welcome-link a {
+  background-color: var(--dark-red);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border-radius: 7px;
+  width: 360px;
+  height: 75px;
 }
