@@ -95,7 +95,7 @@ html {
 h1 a {
   color: #ffffff;
   text-transform: uppercase;
-  padding-left: 20px;
+  margin-left: 20px;
   font-family: 'Forum';
   font-weight: 400;
   font-size: 28px;
@@ -152,20 +152,27 @@ h1 a:hover {
   color: #FFFFFF;
 }
 
-.welcome-link {
-  padding-top: 78px;
+.welcome-submit {
+  padding-top: 24px;
+  padding-right: 67px;
+  padding-bottom: 23px;
+  padding-left: 68px;
+
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 2px;
+
+  color: #ffffff;
+  background-color: var(--dark-red);
+
+  border: 0;
+  border-radius: 8px;
+
+  margin-top: 76px;
 }
 
-.welcome-link a {
-  background-color: var(--dark-red);
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  border-radius: 7px;
-  width: 360px;
-  height: 75px;
+.welcome-submit:hover {
+  background-color: var(--font-gold);
 }
