@@ -223,14 +223,18 @@ h1 a:hover {
   row-gap: 78px;
 }
 
+.visiting-cards-block a {
+  display: block;
+  text-decoration: none;
+}
+
 .visiting-cards-title {
   position: relative;
-
   font-size: 32px;
   line-height: 35px;
   font-weight: 400;
-
   margin-top: 25px;
+  text-decoration: none;
 }
 
 .visiting-cards-title:after {
@@ -256,6 +260,7 @@ h1 a:hover {
   line-height: 26px;
   color: #000000;
   margin-top: 21px;
+  text-decoration: none;
 }
 
 .visiting-cards-block p:last-child {
